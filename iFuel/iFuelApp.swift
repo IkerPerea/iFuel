@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct iFuelApp: App {
+    @ObservedObject var viewModel = FuelViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MapView(viewModel: viewModel)
         }
     }
 }

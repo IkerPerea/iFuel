@@ -8,17 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		31D350B82C3DFEA4002CFE63 /* iFuelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350B72C3DFEA4002CFE63 /* iFuelApp.swift */; };
-		31D350BA2C3DFEA4002CFE63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350B92C3DFEA4002CFE63 /* ContentView.swift */; };
+		31D350BA2C3DFEA4002CFE63 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350B92C3DFEA4002CFE63 /* MapView.swift */; };
 		31D350BC2C3DFEA7002CFE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D350BB2C3DFEA7002CFE63 /* Assets.xcassets */; };
 		31D350BF2C3DFEA7002CFE63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D350BE2C3DFEA7002CFE63 /* Preview Assets.xcassets */; };
+		31D350C62C3DFF42002CFE63 /* misco.json in Resources */ = {isa = PBXBuildFile; fileRef = 31D350C52C3DFF42002CFE63 /* misco.json */; };
+		31D350C82C3DFF55002CFE63 /* GasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350C72C3DFF55002CFE63 /* GasModel.swift */; };
+		31D350CA2C3DFFBA002CFE63 /* FuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350C92C3DFFBA002CFE63 /* FuelViewModel.swift */; };
+		31D350CC2C3E05AA002CFE63 /* CustomGasMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350CB2C3E05AA002CFE63 /* CustomGasMarker.swift */; };
+		31D350D12C3E109D002CFE63 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350D02C3E1096002CFE63 /* DetailedView.swift */; };
+		31D350D42C3E117F002CFE63 /* FuelNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350D32C3E1177002CFE63 /* FuelNavigation.swift */; };
+		31D350D62C3E1184002CFE63 /* FuelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350D52C3E1184002CFE63 /* FuelFactory.swift */; };
+		31D350D82C3E1197002CFE63 /* FuelFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D350D72C3E1197002CFE63 /* FuelFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		31D350B42C3DFEA4002CFE63 /* iFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D350B72C3DFEA4002CFE63 /* iFuelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFuelApp.swift; sourceTree = "<group>"; };
-		31D350B92C3DFEA4002CFE63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		31D350B92C3DFEA4002CFE63 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		31D350BB2C3DFEA7002CFE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D350BE2C3DFEA7002CFE63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31D350C52C3DFF42002CFE63 /* misco.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = misco.json; sourceTree = "<group>"; };
+		31D350C72C3DFF55002CFE63 /* GasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasModel.swift; sourceTree = "<group>"; };
+		31D350C92C3DFFBA002CFE63 /* FuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewModel.swift; sourceTree = "<group>"; };
+		31D350CB2C3E05AA002CFE63 /* CustomGasMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGasMarker.swift; sourceTree = "<group>"; };
+		31D350D02C3E1096002CFE63 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		31D350D32C3E1177002CFE63 /* FuelNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelNavigation.swift; sourceTree = "<group>"; };
+		31D350D52C3E1184002CFE63 /* FuelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelFactory.swift; sourceTree = "<group>"; };
+		31D350D72C3E1197002CFE63 /* FuelFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				31D350B72C3DFEA4002CFE63 /* iFuelApp.swift */,
-				31D350B92C3DFEA4002CFE63 /* ContentView.swift */,
+				31D350D22C3E1168002CFE63 /* Navigation */,
+				31D350CF2C3E107B002CFE63 /* Model */,
+				31D350CE2C3E1070002CFE63 /* ViewModel */,
+				31D350CD2C3E104F002CFE63 /* Views */,
+				31D350C52C3DFF42002CFE63 /* misco.json */,
 				31D350BB2C3DFEA7002CFE63 /* Assets.xcassets */,
 				31D350BD2C3DFEA7002CFE63 /* Preview Content */,
 			);
@@ -65,6 +85,42 @@
 				31D350BE2C3DFEA7002CFE63 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31D350CD2C3E104F002CFE63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31D350CB2C3E05AA002CFE63 /* CustomGasMarker.swift */,
+				31D350D02C3E1096002CFE63 /* DetailedView.swift */,
+				31D350B92C3DFEA4002CFE63 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31D350CE2C3E1070002CFE63 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				31D350C92C3DFFBA002CFE63 /* FuelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		31D350CF2C3E107B002CFE63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31D350C72C3DFF55002CFE63 /* GasModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31D350D22C3E1168002CFE63 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				31D350D32C3E1177002CFE63 /* FuelNavigation.swift */,
+				31D350D52C3E1184002CFE63 /* FuelFactory.swift */,
+				31D350D72C3E1197002CFE63 /* FuelFlow.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D350C62C3DFF42002CFE63 /* misco.json in Resources */,
 				31D350BF2C3DFEA7002CFE63 /* Preview Assets.xcassets in Resources */,
 				31D350BC2C3DFEA7002CFE63 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D350BA2C3DFEA4002CFE63 /* ContentView.swift in Sources */,
+				31D350BA2C3DFEA4002CFE63 /* MapView.swift in Sources */,
+				31D350CC2C3E05AA002CFE63 /* CustomGasMarker.swift in Sources */,
 				31D350B82C3DFEA4002CFE63 /* iFuelApp.swift in Sources */,
+				31D350D82C3E1197002CFE63 /* FuelFlow.swift in Sources */,
+				31D350CA2C3DFFBA002CFE63 /* FuelViewModel.swift in Sources */,
+				31D350D12C3E109D002CFE63 /* DetailedView.swift in Sources */,
+				31D350D42C3E117F002CFE63 /* FuelNavigation.swift in Sources */,
+				31D350C82C3DFF55002CFE63 /* GasModel.swift in Sources */,
+				31D350D62C3E1184002CFE63 /* FuelFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
